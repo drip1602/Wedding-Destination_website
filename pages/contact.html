@@ -1,0 +1,36 @@
+<div class="container1">
+
+    <!-- contact section starts  -->
+    
+    <section class="contact" id="contact">
+        
+        <div class="heading">
+            <h1>contact us</h1>
+            <img src="images/header-img.png" alt="">
+        </div>
+        
+        <form name="form" autocomplete="off">
+        <div class="inputBox">
+            <input type="text" placeholder="your name" name="username" ng-model="username" required>
+            <input type="email" placeholder="your email" name="email" ng-model="email" required>
+        </div>
+        <div class="inputBox">
+            <span ng-show="form.username.$touched && form.username.$invalid">Username is required</span>
+            <span ng-show="form.email.$touched && form.email.$invalid">Email is required</span>
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="your number" name="num" ng-model="num" required>
+            <input type="text" placeholder="your address" name="addr" ng-model="addr" required>
+        </div>
+        <div class="inputBox">
+            <span ng-show="form.num.$touched && form.num.$invalid">Number is required</span>
+            <span ng-show="form.addr.$touched && form.addr.$invalid">Address is required</span>
+        </div>
+        <textarea placeholder="say something" name="" id="" cols="30" rows="10"></textarea>
+        <input type="submit" value="send message" class="btn">
+    </form>
+    
+</section>
+
+<!-- contact section ends -->
+</div>
